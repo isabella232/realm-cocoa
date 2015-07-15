@@ -11,6 +11,8 @@ x.xx.x Release notes (yyyy-MM-dd)
 * Avoid evaluating results eagerly when filtering and sorting.
 * Add nullability annotations to the Objective-C API to provide enhanced compiler
   warnings and bridging to Swift.
+* Add `-[RLMArray exchangeObjectAtIndex:withObjectAtIndex]` and `List.swap(_:_:)`
+  to allow exchanging the location of two object in the given `RLMArray` / `List`.
 
 ### Bugfixes
 
