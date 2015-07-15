@@ -18,6 +18,8 @@ x.xx.x Release notes (yyyy-MM-dd)
   no longer cause other processes using the same Realm to hang indefinitely.
 * Fix incorrect results when querying for < or <= on ints which
   requires 64 bits to represent with a CPU that supports SSE 4.2.
+* Wrap calls to the block passed to `enumerate` in an autoreleasepool to reduce
+  memory growth when migrating a large amount of objects.
 
 0.93.2 Release notes (2015-06-12)
 =============================================================
